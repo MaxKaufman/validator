@@ -7,9 +7,11 @@
         public $rulesOptions = [];
         public $validated = [];
 
-        public function setRule(string $name, RuleInterface $option): void
+        public function setRule(string $name, RuleInterface $option): self
         {
             $this->rulesOptions[$name]["$option"] = $option;
+
+            return $this;
         }
 
         public function validate(array $request): bool
