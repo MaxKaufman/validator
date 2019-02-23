@@ -1,0 +1,16 @@
+{
+    "name": "sakh/validator",
+    "type": "library",
+    "require": {
+      "php": ">7.1"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "*"
+    },
+    "autoload": {
+      "psr-4": {
+        "Rule\\": "src"
+      },
+      "files": ["src/Validator.php"]
+    }
+}
